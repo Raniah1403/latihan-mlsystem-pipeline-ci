@@ -38,6 +38,7 @@ jobs:
       
       # Run as a mlflow project
       - name: Run mlflow project
+        working-directory: ${{ github.workspace }}/MLproject
         run: |
           mlflow run MLproject --env-manager=local 
  
